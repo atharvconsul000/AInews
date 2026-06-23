@@ -85,8 +85,4 @@ curl http://localhost:8000/api/seed
 - **`app/services/ai_engine.py`**: The intelligence layer. Converts user keywords into vector embeddings, computes Cosine Similarity against the daily news dump, clusters the top matches, and prompts the LLM to write the final newsletter copy.
 - **`app/main.py`**: The FastAPI entry point. Also houses the asynchronous background Cron Job that fires the daily emails.
 
-## 🤝 Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## 📝 License
-[MIT](https://choosealicense.com/licenses/mit/)
