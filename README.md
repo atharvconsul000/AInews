@@ -4,7 +4,6 @@ An automated, highly-personalized AI-driven news aggregation platform that compl
 
 This platform scrapes global news feeds, allows users to track hyper-specific keywords, ranks articles via community voting, and generates a **personalized daily email newsletter** automatically summarized by AI!
 
-![Platform UI](frontend/src/assets/hero.png) <!-- Update with actual screenshot later -->
 
 ## ✨ Core Features
 
