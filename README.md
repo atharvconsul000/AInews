@@ -1,4 +1,4 @@
-# 📰 Antigravity AI News Platform
+# 📰 AI News Platform
 
 An automated, highly-personalized AI-driven news aggregation platform that completely eliminates information overload. 
 
