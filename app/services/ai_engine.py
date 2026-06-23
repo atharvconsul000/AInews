@@ -1,3 +1,13 @@
+"""
+AI Engine Service.
+
+This module is responsible for the intelligence layer of the application. 
+It uses HuggingFace Sentence Transformers to generate vector embeddings for articles and user topics.
+By calculating the cosine similarity between these embeddings, it filters out irrelevant news.
+Finally, it clusters identical news stories (for confidence ranking) and prompts the Gemini LLM
+to synthesize the final personalized newsletter in raw HTML.
+"""
+
 from sentence_transformers import SentenceTransformer
 import numpy as np
 import os

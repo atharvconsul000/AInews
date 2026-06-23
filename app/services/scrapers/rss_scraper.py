@@ -1,3 +1,13 @@
+"""
+News Scraping Pipeline.
+
+This module dynamically ingests news from any URL.
+It implements a 3-tier Auto-Discovery system:
+1. Direct RSS/XML parsing.
+2. HTML Head parsing to auto-discover hidden RSS feeds.
+3. Generic HTML Web Crawler fallback (heuristically visits sub-links to extract OpenGraph metadata).
+"""
+
 import requests
 import feedparser
 from bs4 import BeautifulSoup

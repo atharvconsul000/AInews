@@ -21,7 +21,19 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+"""
+Main entry point for the Antigravity AI News backend.
+Initializes the FastAPI application, mounts the middleware, configures database tables,
+and manages the background asynchronous daily cron job for sending automated AI newsletters.
+"""
+
 async def run_daily_cron():
+    """
+    Background worker that sleeps until 8:00 AM server time every day.
+    Once triggered, it fetches all user profiles, checks their active topics/sources,
+    scrapes the latest news, runs the semantic AI ranking algorithm, 
+    and emails the finalized AI-generated newsletter to the user.
+    """
     while True:
         now = datetime.now()
         target = now.replace(hour=8, minute=0, second=0, microsecond=0)
